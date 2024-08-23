@@ -1,0 +1,27 @@
+h1{
+    color: #0f0;
+}.corazon {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    transform: rotate(-45deg);
+    margin: 50px;
+}
+.corazon::before,
+.corazon::after {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    border-radius: 50%;
+}
+.corazon::before {
+    top: -50px;
+    left: 0;
+}
+.corazon::after {
+    left: 50px;
+    top: 0;
+}
